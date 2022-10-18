@@ -1,9 +1,13 @@
 <?php
 
+// Criando variáveis
 $mesangem = "Estou com sede!";
 $senha = "0123456789";
 
+// Criando uma string
 $titulo = 'Meu site - Contatos';
+
+// CRiando um number
 $idade_do_fesso = -17.99;
 
 $idadeDoFesso = 17;
@@ -12,10 +16,11 @@ $casa = 'azul';
 
 $cnpj = '875908347095687340258';
 
+// Criand uma boolean
 $amarelo = true;
 
-// Criand  constante em PHP;
-define('casa', 'azul');
+// Criando constante em PHP;
+define('CASA', 'azul');
 
 ?>
 <!DOCTYPE html>
@@ -30,12 +35,12 @@ define('casa', 'azul');
 
 <body>
 
-    <?php echo "Olá terra!";
-    echo "Olá planeta!" ?>
+    <?php echo "Olá terra!<br>\n";
+    echo "\t<p>Olá planeta!</p>\n"; ?>
 
     <?php
 
-    echo somar(10, 2);
+    echo somar(10, 2) . "<br>";
 
     echo "Olá mundo!";
 
@@ -69,18 +74,15 @@ echo $idadeDoFesso;
 
 
 echo '<br>' . $CASA . "<br>" . $casa . '<br>';
+echo "<br>{$CASA}<br>{$casa}<br>"; // Interpolar
 
-echo '<br>{$CASA}<br>{$casa}<br>';
 
-
-if ($amarelo) {
+if ($amarelo):
     echo '<p>Amarelo</p>';
-} else if (!$amarelo) {
+elseif (!$amarelo):
     echo '<p>Sem cor</p>';
-} else {
-}
-
-
+    echo '';
+endif;
 
 $idade_do_fesso = "vinte e cinco anos";
 
@@ -88,8 +90,7 @@ echo '<br>' . $idade_do_fesso;
 
 // define('casa', 'amarela'); → Constate já foi criada antes...
 
-echo '<h1>' . casa . '</h1>';
-
+echo '<h1>' . CASA . '</h1>'; // Exibindo a constante CASA
 
 
 // Função que soma dois valores e exibe o resultado no navegador:
