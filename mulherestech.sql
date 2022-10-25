@@ -46,7 +46,7 @@ CREATE TABLE users (
 
     -- Formato do tipo DATETIME → AAAA-MM-DD HH:II:SS.
     last_login DATETIME,
-    ustatus ENUM('online', 'offline', 'deleted') DEFAULT 'online'
+    ustatus ENUM('online', 'offline', 'deleted', 'banned') DEFAULT 'online'
 );
 
 -- Cadastra alguns usuários para testes:
