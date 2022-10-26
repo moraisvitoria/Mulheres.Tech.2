@@ -1,7 +1,7 @@
 <?php
 
 // Define o título desta página:
-$page_title = "Página modelo";
+$page_title = "Sobre...";
 
 // Definir o conteúdo desta página:
 $page_content = <<<HTML

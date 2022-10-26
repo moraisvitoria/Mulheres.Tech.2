@@ -21,6 +21,9 @@ $route = trim(urldecode($_SERVER['QUERY_STRING']));
 // Se não solicitou uma rota, usa a rota da página inicial:
 if ($route == '') $route = 'home';
 
+// Remove coisas depois da "/" caso exista:
+$route = explode('/', $route)[0];
+
 /**
  * Monta todos os caminhos dos arquivos da página em uma coleção:
  * Referências:

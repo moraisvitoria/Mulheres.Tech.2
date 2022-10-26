@@ -1,7 +1,7 @@
 <?php
 
 // Define o título desta página:
-$page_title = "Faça contato";
+$page_title = "Políticas de Privacidade";
 
 // Definir o conteúdo desta página:
 $page_content = <<<HTML
