@@ -8,45 +8,7 @@ require('config.php');
  ***********************************************/
 
 // Define o título da página:
-$page_title = 'Slogan do site.';
-
-// query para obter todos os artigos do site:
-$sql = "
-
-SELECT aid, title, thumbnail, resume
-FROM articles
-    WHERE astatus = 'online'
-    AND adate <= NOW()
-ORDER by adate DESC
-
-";
-
-// Executa query e armazena em '$res':
-$res = $conn->query($sql);
-
-// Se não existem artigos...
-if ($res->num_rows == 0) :
-
-    // Exibe mensagem para o usuário:
-    $page_content .= "<p>Ooooops! Nenhum artigo encontrado...";
-
-// Se achou os artigos...
-else :
-
-    while ($art = $res->fetch_assoc()) :
-
-$page_content .= <<<HTML
-
-<hr>
-<img src="{$art['thumbnail']}" alt="{$art['title']}">
-<h3>{$art['title']}</h3>
-<p>{$art['resume']}</p>
-
-HTML;
-
-endwhile;
-
-endif;
+$page_title = 'Página modelo';
 
 /************************************************
  * Todo o código PHP desta página termina aqui! *
@@ -60,8 +22,9 @@ require('header.php');
  ********************************************************/
 ?>
 
-<h2>Artigos Recentes</h2>
-<?php echo $page_content ?>
+<h2>Página modelo</h2>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, sint sequi nam tempora quis doloremque cupiditate eos quaerat nulla laudantium perspiciatis. Nisi esse commodi ipsam nostrum fuga omnis iure quos.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum excepturi laudantium maxime voluptatibus quia deserunt voluptatum delectus odit consequatur, eligendi reiciendis nulla quas laborum rerum mollitia, voluptatem sequi velit omnis.</p>
 
 <?php
 /*********************************************************
