@@ -19,7 +19,7 @@
             <hr>
             <a href="/">Início</a>
             <a href="/contacts">Contatos</a>
-            <a href="/about.php">Sobre</a>
+            <a href="/about">Sobre</a>
             <a href="/policies.php">Privacidade</a>
             <hr>
         </nav>        
