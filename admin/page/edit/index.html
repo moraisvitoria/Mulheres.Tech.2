@@ -1,0 +1,58 @@
+<h2>Edita Shortlink</h2>
+
+<div>
+
+    <p>Altere apenas os campos que deseja editar...</p>
+
+    <div id="editAlert">
+        <h4>ATENÇÃO!</h4>
+        <p>Este <em>shortlink</em> tem mais de 10 acessos e não é recomendado editá-lo, pois vai interferir nas ações de SEO.</p>
+        <p>Neste caso, prefira criar um novo <em>shortlink</em>.</p>
+    </div>
+
+    <form action="#" method="post" id="editForm">
+        <input type="hidden" name="id" id="id" value="">
+
+        <p>
+            <label for="name">Nome do shortlink:</label>
+            <input type="text" name="name" id="name" required minlength="2" maxlength="64" autofocus>
+        </p>
+
+        <p>
+            <label for="url">URL original:</label>
+            <input type="url" name="url" id="url" required>
+        </p>
+
+        <p>
+            <label for="short">Shortlink:</label>
+            <span id="shortlink">
+                <span></span>
+                <input type="text" name="short" id="short" required minlength="2" maxlength="64">
+            </span>
+        </p>
+
+        <p>
+            <label for="expires">Data de expiração:</label>
+            <input type="date" name="expires" id="expires" required>
+        </p>
+
+        <p id="mode" class="checkblock">
+            <span>Modo:</span>
+            <input type="radio" name="mode" id="modeURL" value="url" required checked><label class="checklabel" for="modeURL">Por URL</label>
+            <input type="radio" name="mode" id="mode301" value="301"><label class="checklabel" for="mode301">HTTP 301</label>
+        </p>
+
+        <p id="status" class="checkblock">
+            <span>Status:</span>
+            <input type="radio" name="status" id="statusOn" value="on" required checked><label class="checklabel" for="statusOn">Ativo</label>
+            <input type="radio" name="status" id="statusOff" value="off"><label class="checklabel" for="statusOff">Inativo</label>
+        </p>
+
+        <p>
+            <button type="submit">Salvar</button>
+            <button type="reset">Recarregar</button>
+        </p>
+
+    </form>
+
+</div>

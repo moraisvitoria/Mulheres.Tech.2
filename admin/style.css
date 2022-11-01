@@ -1,0 +1,217 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+html, body, #wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    background-color: black;
+}
+
+a {
+    color: #549bd4;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ff4500;
+}
+
+#wrap {
+    display: flex;
+    flex-direction: column;
+    max-width: 768px;
+    margin: auto;
+}
+
+#wrap>header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#wrap>header a:first-child {
+    margin-right: auto;
+    color: orange;
+}
+
+#wrap>header h1 {
+    font-size: 1.5rem;
+    margin: 0;
+    text-align: center;
+    padding: .5rem;
+}
+
+#wrap>header hr {
+    margin: 0;
+    border: none;
+    border-bottom: 3px solid green;
+}
+
+#wrap>header small {
+    display: block;
+    margin-top: -0.02rem;
+    color: greenyellow;
+}
+
+#wrap>header a:not(a:first-child) {
+    font-size: 1.5rem;
+    padding: .5rem;
+    border: 1px dotted grey;
+    border-radius: .5rem;
+    margin-right: .5rem;
+}
+
+#wrap>header img {
+    display: block;
+    width: 1.7rem;
+    height: 1.7rem;
+    border-radius: 50%;
+}
+
+#wrap>main {
+    background-color: white;
+    flex-grow: 1;
+    padding: 1rem;
+}
+
+#wrap>main>h2:first-child {
+    margin: -1rem;
+    margin-bottom: 0;
+    background-color: gray;
+    padding: 1rem;
+    color: white;
+}
+
+#wrap>footer {
+    color: #9b9b9b;
+    text-align: center;
+    padding: .5rem;
+    font-size: small;
+}
+
+input, textarea, button {
+    font-family: inherit;
+    font-size: inherit;
+    background-color: rgb(232, 240, 254);
+}
+
+button {
+    cursor: pointer;
+    color: white;
+    border: none;
+    padding: .5rem 1rem;
+    border-radius: .3rem;
+    background: grey;
+}
+
+input:not(input[type=checkbox], input[type=radio]) {
+    width: 100%;
+    padding: .5rem .5rem;
+    border-radius: .3rem;
+}
+
+button[type=submit] {
+    background-color: steelblue;
+}
+
+button[type=reset] {
+    background-color: orangered;
+}
+
+input {
+    border: 1px solid grey;
+    border-bottom: 3px solid grey;
+    border-right: 3px solid grey;
+}
+
+input:invalid, .invalid {
+    background-color: rgb(255, 214, 214);
+    border: 1px solid red;
+    border-bottom: 3px solid red;
+    border-right: 3px solid red;
+}
+
+form:invalid button[type=submit] {
+    background-color: grey;
+    pointer-events: none;
+}
+
+#slideMsg, #confirm {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    padding: 0 .5rem .5rem .5rem;
+}
+
+#slideMsg div {
+    display: table;
+    margin: auto;
+    text-align: center;
+    padding: .25rem .5rem;
+    background-color: yellow;
+    border-radius: 0 0 .3rem .3rem;
+    color: darkred;
+    box-shadow: 5px 5px 10px 0px rgba(89, 89, 89, 1);
+    max-width: 400px;
+}
+
+#slideMsg h3 {
+    margin: 0;
+}
+
+#slideMsg p {
+    margin: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#slideMsg button {
+    border: none;
+    padding: .4rem .5rem;
+    color: white;
+    border-radius: .3rem;
+}
+
+#slideMsg button.confirm {
+    background: steelblue;
+}
+
+#slideMsg button.reset {
+    background: orangered;
+}
+
+.center {
+    text-align: center;
+}
+
+.red {
+    color: red;
+}
+
+.orange {
+    color: orange;
+}
+
+.green {
+    color: green;
+}

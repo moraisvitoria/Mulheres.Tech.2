@@ -1,0 +1,25 @@
+.qrcode {
+    text-align: center;
+}
+
+.qrcode h3 {
+    margin-bottom: 0;
+}
+
+.qrcode img {
+    display: block;
+    max-width: 290px;
+    margin: auto;
+}
+
+.qrcode small {
+    display: block;
+}
+
+.qrcode button {
+    background-color: steelblue;
+}
+
+.qrcode button:hover {
+    background-color: orangered;
+}

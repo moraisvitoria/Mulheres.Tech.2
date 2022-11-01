@@ -1,0 +1,290 @@
+{
+    "results": [
+        {
+            "gender": "male",
+            "name": {
+                "title": "Mr",
+                "first": "Fred",
+                "last": "Hale"
+            },
+            "location": {
+                "street": {
+                    "number": 8865,
+                    "name": "Frances Ct"
+                },
+                "city": "Waco",
+                "state": "Louisiana",
+                "country": "United States",
+                "postcode": 40282,
+                "coordinates": {
+                    "latitude": "81.8426",
+                    "longitude": "-175.0582"
+                },
+                "timezone": {
+                    "offset": "+11:00",
+                    "description": "Magadan, Solomon Islands, New Caledonia"
+                }
+            },
+            "email": "fred.hale@example.com",
+            "login": {
+                "uuid": "55fe4f55-35f9-4164-a525-d99fcd11dc75",
+                "username": "blackgoose834",
+                "password": "eeeee",
+                "salt": "nw9Jexsj",
+                "md5": "7cde785070e690c1f4f2e3e1690a8e93",
+                "sha1": "437dd1ef124761250457709306da18fc7ca74581",
+                "sha256": "f8dd88feea7e3639ba19a267060a8415e3369989c91ee4823a77c20742fd5251"
+            },
+            "dob": {
+                "date": "1978-10-28T10:04:54.835Z",
+                "age": 44
+            },
+            "registered": {
+                "date": "2013-09-11T08:34:11.858Z",
+                "age": 9
+            },
+            "phone": "(881) 287-4354",
+            "cell": "(979) 200-2069",
+            "id": {
+                "name": "SSN",
+                "value": "446-58-4859"
+            },
+            "picture": {
+                "large": "https://randomuser.me/api/portraits/men/94.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/men/94.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/men/94.jpg"
+            },
+            "nat": "US"
+        },
+        {
+            "gender": "male",
+            "name": {
+                "title": "Mr",
+                "first": "Benito",
+                "last": "Roque"
+            },
+            "location": {
+                "street": {
+                    "number": 999,
+                    "name": "Calle Cadena"
+                },
+                "city": "Palo Alto de Abajo",
+                "state": "Chiapas",
+                "country": "Mexico",
+                "postcode": 58970,
+                "coordinates": {
+                    "latitude": "2.6814",
+                    "longitude": "-1.6377"
+                },
+                "timezone": {
+                    "offset": "-4:00",
+                    "description": "Atlantic Time (Canada), Caracas, La Paz"
+                }
+            },
+            "email": "benito.roque@example.com",
+            "login": {
+                "uuid": "fbf10141-9f77-4b9e-bd9f-a02c41292859",
+                "username": "brownkoala275",
+                "password": "qwe123",
+                "salt": "uLdg5A7D",
+                "md5": "0388fd04ea90fbbb7b6ebe206ccb029c",
+                "sha1": "3e52e260b47c4588715eb0b093b2da127c7bc9d3",
+                "sha256": "77702cb68ba38c1206cbb0b7fe42798d7ce7e55c0a9ba53ed9daab754edbaab3"
+            },
+            "dob": {
+                "date": "1992-03-25T16:11:37.820Z",
+                "age": 30
+            },
+            "registered": {
+                "date": "2014-08-23T06:12:43.896Z",
+                "age": 8
+            },
+            "phone": "(613) 965 6282",
+            "cell": "(673) 279 5842",
+            "id": {
+                "name": "NSS",
+                "value": "09 50 68 8189 1"
+            },
+            "picture": {
+                "large": "https://randomuser.me/api/portraits/men/68.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/men/68.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/men/68.jpg"
+            },
+            "nat": "MX"
+        },
+        {
+            "gender": "male",
+            "name": {
+                "title": "Mr",
+                "first": "Ted",
+                "last": "Montgomery"
+            },
+            "location": {
+                "street": {
+                    "number": 6104,
+                    "name": "Thornridge Cir"
+                },
+                "city": "Bundaberg",
+                "state": "Tasmania",
+                "country": "Australia",
+                "postcode": 7817,
+                "coordinates": {
+                    "latitude": "-79.6207",
+                    "longitude": "-142.0886"
+                },
+                "timezone": {
+                    "offset": "+11:00",
+                    "description": "Magadan, Solomon Islands, New Caledonia"
+                }
+            },
+            "email": "ted.montgomery@example.com",
+            "login": {
+                "uuid": "e6f7b473-d9b2-45fa-8a3e-3b63bf8e731f",
+                "username": "happyrabbit901",
+                "password": "kristian",
+                "salt": "C5dRGZgO",
+                "md5": "608647ee0db1cf9b6c007a795ce34b4e",
+                "sha1": "5c16157159fbdabca208aeb029b9cc4621760b63",
+                "sha256": "50d924f93d0711f46c5abd3d449c79512bf5f87eb33efe5b77b82b3bf7cd416d"
+            },
+            "dob": {
+                "date": "1990-03-09T13:45:55.298Z",
+                "age": 32
+            },
+            "registered": {
+                "date": "2015-05-09T05:40:20.403Z",
+                "age": 7
+            },
+            "phone": "09-1960-9211",
+            "cell": "0494-103-479",
+            "id": {
+                "name": "TFN",
+                "value": "787386629"
+            },
+            "picture": {
+                "large": "https://randomuser.me/api/portraits/men/1.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/men/1.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/men/1.jpg"
+            },
+            "nat": "AU"
+        },
+        {
+            "gender": "male",
+            "name": {
+                "title": "Mr",
+                "first": "Nitesh",
+                "last": "Nand"
+            },
+            "location": {
+                "street": {
+                    "number": 516,
+                    "name": "NAD X Rd"
+                },
+                "city": "Nangloi Jat",
+                "state": "Uttarakhand",
+                "country": "India",
+                "postcode": 11455,
+                "coordinates": {
+                    "latitude": "16.6580",
+                    "longitude": "-154.0047"
+                },
+                "timezone": {
+                    "offset": "-7:00",
+                    "description": "Mountain Time (US & Canada)"
+                }
+            },
+            "email": "nitesh.nand@example.com",
+            "login": {
+                "uuid": "ade2ee20-4e9f-49d3-ab7e-0b8d1a86ceca",
+                "username": "purplefrog650",
+                "password": "audi",
+                "salt": "TRMWbxQc",
+                "md5": "06676dd689512eef18c5e7dbf7c1a56a",
+                "sha1": "a6d1afc48469c93753a5d1e44c54a3f386c6b0c0",
+                "sha256": "e81134f468783d23a161b16393460819475afac96f183d6e03754c40c5aae7e1"
+            },
+            "dob": {
+                "date": "1994-04-06T19:34:29.083Z",
+                "age": 28
+            },
+            "registered": {
+                "date": "2020-02-05T12:34:19.542Z",
+                "age": 2
+            },
+            "phone": "9023565300",
+            "cell": "7456412092",
+            "id": {
+                "name": "UIDAI",
+                "value": "278615913309"
+            },
+            "picture": {
+                "large": "https://randomuser.me/api/portraits/men/23.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/men/23.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/men/23.jpg"
+            },
+            "nat": "IN"
+        },
+        {
+            "gender": "male",
+            "name": {
+                "title": "Mr",
+                "first": "Aaron",
+                "last": "Payne"
+            },
+            "location": {
+                "street": {
+                    "number": 3163,
+                    "name": "Lovers Ln"
+                },
+                "city": "Bendigo",
+                "state": "New South Wales",
+                "country": "Australia",
+                "postcode": 852,
+                "coordinates": {
+                    "latitude": "-88.1929",
+                    "longitude": "168.8360"
+                },
+                "timezone": {
+                    "offset": "-3:00",
+                    "description": "Brazil, Buenos Aires, Georgetown"
+                }
+            },
+            "email": "aaron.payne@example.com",
+            "login": {
+                "uuid": "2f90e322-e710-446c-bceb-5dba4ec82a92",
+                "username": "tinydog409",
+                "password": "baura",
+                "salt": "IbSlhb3Z",
+                "md5": "a6fcb1e6fc668284e178c3ebc3eb5175",
+                "sha1": "5c6da9f0c46d5ce9a6d0172df0d1758b8cbb93ee",
+                "sha256": "34cfd217ab7f79f3a1e6082bcc133c891cf056400feffb0aa67283020710b20b"
+            },
+            "dob": {
+                "date": "1946-04-12T09:51:39.892Z",
+                "age": 76
+            },
+            "registered": {
+                "date": "2016-08-05T03:47:42.855Z",
+                "age": 6
+            },
+            "phone": "01-4158-2777",
+            "cell": "0452-784-602",
+            "id": {
+                "name": "TFN",
+                "value": "981648757"
+            },
+            "picture": {
+                "large": "https://randomuser.me/api/portraits/men/6.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/men/6.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/men/6.jpg"
+            },
+            "nat": "AU"
+        }
+    ],
+    "info": {
+        "seed": "043c2a9d079e3dfc",
+        "results": 5,
+        "page": 1,
+        "version": "1.4"
+    }
+}

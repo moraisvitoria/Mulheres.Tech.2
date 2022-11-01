@@ -1,0 +1,41 @@
+#editForm, #addForm {
+    display: block;
+    margin: auto;
+    max-width: 400px;
+}
+
+#editForm label:not(.checklabel) {
+    display: block;
+    padding: 0 0 .25rem .25rem;
+}
+
+input[type="radio"] {
+    display: inline-block;
+    margin: 0 .25rem;
+}
+
+#shortlink {
+    display: flex;
+    align-items: center;
+}
+
+#shortlink span {
+    color: grey;
+}
+
+#editForm p:last-child,
+#addForm p:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#editAlert {
+    display: none;
+    background-color: yellow;
+    border: 1px dotted orangered;
+    border-radius: .5rem;
+    padding: 0 1rem;
+    color: darkred;
+    font-size: small;
+}

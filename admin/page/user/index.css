@@ -1,0 +1,32 @@
+#userData {
+    padding-top: 1rem;
+    max-width: 280px;
+    margin: auto;
+}
+
+#userData img {
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+#userData .btns {
+    display: flex;
+    flex-direction: column;
+}
+
+#userData .btns button {
+    margin-top: 1rem;
+}
+
+#userEdit {
+    background-color: steelblue;
+}
+
+#userPass {
+    background-color: green;
+}
+
+#userLogout {
+    background-color: orangered;
+}

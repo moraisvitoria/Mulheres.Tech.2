@@ -1,0 +1,50 @@
+<h2>Novo Shortlink</h2>
+
+<div>
+
+    <p>Preencha todos os campos para inserir o novo shortlink:</p>
+
+    <form action="#" method="post" id="addForm">
+
+        <p>
+            <label for="url">URL original:</label>
+            <input type="url" name="url" id="url" required autocomplete="off" autofocus>
+        </p>
+
+        <p>
+            <label for="name">Nome do shortlink:</label>
+            <input type="text" name="name" id="name" required minlength="2" maxlength="64" autocomplete="off">
+        </p>
+
+        <p>
+            <label for="short">Shortlink:</label>
+            <span id="shortlink">
+                <span></span>
+                <input type="text" name="short" id="short" required minlength="2" maxlength="64" autocomplete="off">
+            </span>
+        </p>
+
+        <p>
+            <label for="expires">Data de expiração:</label>
+            <input type="date" name="expires" id="expires" required autocomplete="off">
+        </p>
+
+        <p id="mode" class="checkblock">
+            <span>Modo:</span>
+            <input type="radio" name="mode" id="modeURL" value="url" required checked><label class="checklabel" for="modeURL">Por URL</label>
+            <input type="radio" name="mode" id="mode301" value="301"><label class="checklabel" for="mode301">HTTP 301</label>
+        </p>
+
+        <p id="status" class="checkblock">
+            <span>Status:</span>
+            <input type="radio" name="status" id="statusOn" value="on" required checked><label class="checklabel" for="statusOn">Ativo</label>
+            <input type="radio" name="status" id="statusOff" value="off"><label class="checklabel" for="statusOff">Inativo</label>
+        </p>
+
+        <p>
+            <button type="submit">Salvar</button>
+        </p>
+
+    </form>
+
+</div>

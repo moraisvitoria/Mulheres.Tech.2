@@ -1,0 +1,74 @@
+.list-box {
+    margin-top: 1rem;
+    border: 1px solid grey;
+    border-radius: .5rem;
+}
+
+.list-box * {
+    padding: .25rem;
+}
+
+.list-box .short {
+    border-bottom: 1px dotted grey;
+    margin-bottom: 1px;
+}
+
+.list-box .url {
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-top: 1px dotted grey;
+}
+
+.list-box h3 {
+    margin: 0;
+    background-color: rgb(214, 250, 161);
+    border-radius: .48rem .48rem 0 0;
+    font-size: 1.1rem;
+}
+
+.list-box .tools {
+    text-align: center;
+    color: steelblue;
+}
+
+.list-box .tools span {
+    cursor: pointer;
+}
+
+.list-box .tools span:hover {
+    color: orangered;
+}
+
+.list-box .expires {
+    text-align: center;
+    font-size: small;
+    border-top: 1px dotted grey;
+}
+
+#sort {
+    display: table;
+    margin-left: auto;
+    margin-top: 1rem;
+}
+
+#sort select {
+    padding: .25rem;
+    border: 1px solid grey;
+    border-radius: .3rem;
+    display: inline-block;
+    margin: 0 .5rem;
+}
+
+#direction span {
+    display: inline-block;
+    padding: .25rem;
+    cursor: pointer;
+    color: steelblue;
+}
+
+#direction span:hover {
+    color: orangered;
+}
