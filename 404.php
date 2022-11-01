@@ -8,45 +8,7 @@ require('config.php');
  ***********************************************/
 
 // Define o título da página:
-$page_title = 'Slogan do site.';
-
-// query para obter todos os artigos do site:
-$sql = "
-
-SELECT aid, title, thumbnail, resume
-FROM articles
-    WHERE astatus = 'online'
-    AND adate <= NOW()
-ORDER by adate DESC
-
-";
-
-// Executa query e armazena em '$res':
-$res = $conn->query($sql);
-
-// Se não existem artigos...
-if ($res->num_rows == 0) :
-
-    // Exibe mensagem para o usuário:
-    $page_content .= "<p>Ooooops! Nenhum artigo encontrado...";
-
-// Se achou os artigos...
-else :
-
-    while ($art = $res->fetch_assoc()) :
-
-$page_content .= <<<HTML
-
-<p>---------------------------------------</p>
-<img src="{$art['thumbnail']}" alt="{$art['title']}">
-<h3><a href="view.php?{$art['aid']}">{$art['title']}</a></h3>
-<p>{$art['resume']}</p>
-
-HTML;
-
-endwhile;
-
-endif;
+$page_title = 'Erro 404';
 
 /************************************************
  * Todo o código PHP desta página termina aqui! *
@@ -60,8 +22,8 @@ require('header.php');
  ********************************************************/
 ?>
 
-<h2>Artigos Recentes</h2>
-<?php echo $page_content ?>
+<h2>Oooops!</h2>
+<p>A página que você está tentando acessar está indisponível ou não existe...</p>
 
 <?php
 /*********************************************************

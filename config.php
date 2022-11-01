@@ -7,7 +7,7 @@ header('Content-Type: text/html; charset=utf-8');
 date_default_timezone_set('America/Sao_Paulo');
 
 // Inicializa variáveis do aplicativo:
-$page_content = '';
+$page_title = $page_content = '';
 
 // Configurações de acesso ao banco de dados:
 $hostname = 'localhost';

@@ -7,46 +7,45 @@ require('config.php');
  * Todo o código PHP desta página começa aqui! *
  ***********************************************/
 
-// Define o título da página:
-$page_title = 'Slogan do site.';
+// 1) Obtém o ID da URL:
+$id = intval($_SERVER['QUERY_STRING']);
 
-// query para obter todos os artigos do site:
-$sql = "
+// 2) Verifica se o ID é igual a 0
+if ($id == 0)
+    // 2.1) Se for, carrega página "404.php".
+    header('Location: 404.php');
 
-SELECT aid, title, thumbnail, resume
+// 3) Escreve o SQL que obtém o artigo:
+$sql = <<<SQL
+
+SELECT *,
+DATE_FORMAT(adate, '%d de %M de %Y às %H:%i') AS adatebr
 FROM articles
-    WHERE astatus = 'online'
+WHERE aid = '{$id}'
+    AND astatus = 'online'
     AND adate <= NOW()
-ORDER by adate DESC
 
-";
-
-// Executa query e armazena em '$res':
+SQL;
 $res = $conn->query($sql);
 
-// Se não existem artigos...
-if ($res->num_rows == 0) :
+// 4) Verifica se o artigo existe:
+if ($res->num_rows != 1)
+    // 4.1) Se não existe, carrega página "404.php".
+    header('Location: 404.php');
 
-    // Exibe mensagem para o usuário:
-    $page_content .= "<p>Ooooops! Nenhum artigo encontrado...";
+// 5) Extrai os dados do artigo:
+$art = $res->fetch_assoc();
 
-// Se achou os artigos...
-else :
-
-    while ($art = $res->fetch_assoc()) :
-
+// 6) Formata o artigo para exibição:
 $page_content .= <<<HTML
 
-<p>---------------------------------------</p>
-<img src="{$art['thumbnail']}" alt="{$art['title']}">
-<h3><a href="view.php?{$art['aid']}">{$art['title']}</a></h3>
-<p>{$art['resume']}</p>
+<h3>{$art['title']}</h3>
+<span>{$art['adatebr']}</span>
+{$art['content']}
 
 HTML;
 
-endwhile;
-
-endif;
+// 7) Define o título da página como título do artigo:
 
 /************************************************
  * Todo o código PHP desta página termina aqui! *
@@ -60,7 +59,6 @@ require('header.php');
  ********************************************************/
 ?>
 
-<h2>Artigos Recentes</h2>
 <?php echo $page_content ?>
 
 <?php
