@@ -1,7 +1,7 @@
 <?php
 
 // Importa o arquivo de configuração:
-require('config.php');
+require('inc/_config.php');
 
 /***********************************************
  * Todo o código PHP desta página começa aqui! *
@@ -33,9 +33,11 @@ if ($res->num_rows == 0) :
 // Se achou os artigos...
 else :
 
+    // Loop para obter cada um dos artigos:
     while ($art = $res->fetch_assoc()) :
 
-$page_content .= <<<HTML
+        // Concatena a visualização (HTML) de cada artigo em $page_content:
+        $page_content .= <<<HTML
 
 <p>---------------------------------------</p>
 <img src="{$art['thumbnail']}" alt="{$art['title']}">
@@ -44,7 +46,7 @@ $page_content .= <<<HTML
 
 HTML;
 
-endwhile;
+    endwhile;
 
 endif;
 
@@ -53,7 +55,7 @@ endif;
  ************************************************/
 
 // Importa cabeçalho do tema:
-require('header.php');
+require('inc/_header.php');
 
 /********************************************************
  * Todo o conteúdo VISUAL da página (HTML) começa aqui! *
@@ -69,5 +71,5 @@ require('header.php');
  *********************************************************/
 
 // Importa rodapé do tema:
-require('footer.php');
+require('inc/_footer.php');
 ?>

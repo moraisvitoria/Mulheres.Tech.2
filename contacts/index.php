@@ -1,29 +1,30 @@
 <?php
 
 // Importa o arquivo de configuração:
-require('inc/_config.php');
+require('../inc/_config.php');
 
 /***********************************************
  * Todo o código PHP desta página começa aqui! *
  ***********************************************/
 
 // Define o título da página:
-$page_title = 'Erro 404';
+$page_title = 'Faça contato';
 
 /************************************************
  * Todo o código PHP desta página termina aqui! *
  ************************************************/
 
 // Importa cabeçalho do tema:
-require('inc/_header.php');
+require('../inc/_header.php');
 
 /********************************************************
  * Todo o conteúdo VISUAL da página (HTML) começa aqui! *
  ********************************************************/
 ?>
 
-<h2>Oooops!</h2>
-<p>A página que você está tentando acessar está indisponível ou não existe...</p>
+<h2>Faça contato</h2>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, sint sequi nam tempora quis doloremque cupiditate eos quaerat nulla laudantium perspiciatis. Nisi esse commodi ipsam nostrum fuga omnis iure quos.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum excepturi laudantium maxime voluptatibus quia deserunt voluptatum delectus odit consequatur, eligendi reiciendis nulla quas laborum rerum mollitia, voluptatem sequi velit omnis.</p>
 
 <?php
 /*********************************************************
@@ -31,5 +32,5 @@ require('inc/_header.php');
  *********************************************************/
 
 // Importa rodapé do tema:
-require('inc/_footer.php');
+require('../inc/_footer.php');
 ?>

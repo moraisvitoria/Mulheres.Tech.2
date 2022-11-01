@@ -1,7 +1,7 @@
 <?php
 
 // Importa o arquivo de configuração:
-require('config.php');
+require('inc/_config.php');
 
 /***********************************************
  * Todo o código PHP desta página começa aqui! *
@@ -15,7 +15,7 @@ $page_title = 'Políticas de Privacidade';
  ************************************************/
 
 // Importa cabeçalho do tema:
-require('header.php');
+require('inc/_header.php');
 
 /********************************************************
  * Todo o conteúdo VISUAL da página (HTML) começa aqui! *
@@ -32,5 +32,5 @@ require('header.php');
  *********************************************************/
 
 // Importa rodapé do tema:
-require('footer.php');
+require('inc/_footer.php');
 ?>
