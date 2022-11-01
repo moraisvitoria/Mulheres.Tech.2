@@ -20,7 +20,7 @@
             <a href="/">Início</a>
             <a href="/contacts">Contatos</a>
             <a href="/about">Sobre</a>
-            <a href="/policies.php">Privacidade</a>
+            <a href="/policies">Privacidade</a>
             <hr>
         </nav>        
 

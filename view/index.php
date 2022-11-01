@@ -1,7 +1,7 @@
 <?php
 
 // Importa o arquivo de configuração:
-require('inc/_config.php');
+require($_SERVER['DOCUMENT_ROOT'] . '/inc/_config.php');
 
 /***********************************************
  * Todo o código PHP desta página começa aqui! *
@@ -13,7 +13,7 @@ $id = intval($_SERVER['QUERY_STRING']);
 // 2) Verifica se o ID é igual a 0
 if ($id == 0)
     // 2.1) Se for, carrega página "404.php".
-    header('Location: 404.php');
+    header('Location: /404');
 
 // 3) Escreve o SQL que obtém o artigo:
 $sql = <<<SQL
@@ -31,7 +31,7 @@ $res = $conn->query($sql);
 // 4) Verifica se o artigo existe:
 if ($res->num_rows != 1)
     // 4.1) Se não existe, carrega página "404.php".
-    header('Location: 404.php');
+    header('Location: /404');
 
 // 5) Extrai os dados do artigo:
 $art = $res->fetch_assoc();
@@ -52,7 +52,7 @@ HTML;
  ************************************************/
 
 // Importa cabeçalho do tema:
-require('inc/_header.php');
+require($_SERVER['DOCUMENT_ROOT'] . '/inc/_header.php');
 
 /********************************************************
  * Todo o conteúdo VISUAL da página (HTML) começa aqui! *
@@ -67,5 +67,5 @@ require('inc/_header.php');
  *********************************************************/
 
 // Importa rodapé do tema:
-require('inc/_footer.php');
+require($_SERVER['DOCUMENT_ROOT'] . '/inc/_footer.php');
 ?>

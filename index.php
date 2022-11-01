@@ -1,7 +1,7 @@
 <?php
 
 // Importa o arquivo de configuração:
-require('inc/_config.php');
+require($_SERVER['DOCUMENT_ROOT'] . '/inc/_config.php');
 
 /***********************************************
  * Todo o código PHP desta página começa aqui! *
@@ -41,7 +41,7 @@ else :
 
 <p>---------------------------------------</p>
 <img src="{$art['thumbnail']}" alt="{$art['title']}">
-<h3><a href="view.php?{$art['aid']}">{$art['title']}</a></h3>
+<h3><a href="view?{$art['aid']}">{$art['title']}</a></h3>
 <p>{$art['resume']}</p>
 
 HTML;
@@ -55,7 +55,7 @@ endif;
  ************************************************/
 
 // Importa cabeçalho do tema:
-require('inc/_header.php');
+require($_SERVER['DOCUMENT_ROOT'] . '/inc/_header.php');
 
 /********************************************************
  * Todo o conteúdo VISUAL da página (HTML) começa aqui! *
@@ -71,5 +71,5 @@ require('inc/_header.php');
  *********************************************************/
 
 // Importa rodapé do tema:
-require('inc/_footer.php');
+require($_SERVER['DOCUMENT_ROOT'] . '/inc/_footer.php');
 ?>
