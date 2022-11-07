@@ -1,3 +1,5 @@
+<?php
+
 /**
  * Coleção (array) com as opções configuração inicial do aplicativo:
  * Referências:
