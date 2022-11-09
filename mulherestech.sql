@@ -46,7 +46,7 @@ CREATE TABLE users (
 
     -- Formato do tipo DATETIME → AAAA-MM-DD HH:II:SS.
     last_login DATETIME,
-    ustatus ENUM('online', 'offline', 'deleted', 'banned') DEFAULT 'online'
+    ustatus ENUM('online', 'deleted', 'banned') DEFAULT 'online'
 );
 
 -- Cadastra alguns usuários para testes:
@@ -68,7 +68,7 @@ INSERT INTO users (
     '1',
     'Joca da Silva',
     'joca@silva.com',
-
+ 
     -- A senha será criptografada pela função SHA1 antes de ser inserida.
     SHA1('Senha123'),
  

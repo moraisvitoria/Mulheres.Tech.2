@@ -63,3 +63,18 @@
     display: flex;
     justify-content: space-around;
 }
+
+.form-error {
+    display: table;
+    margin: auto;
+    background: #ffffcc;
+    color: darkred;
+    border-radius: .5rem;
+    padding: 0 1rem;
+    font-size: .8rem;
+}
+
+.feedback {
+    display: table;
+    margin: auto;
+}
